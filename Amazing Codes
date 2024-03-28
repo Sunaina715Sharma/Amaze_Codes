@@ -16,3 +16,13 @@ print(b)
 [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
 <generator object <genexpr> at 0x7f61f8808b50>
 """
+
+a = [1, 2, 3, 4 ,5]
+b = a
+
+# Change the 4th index in b
+b[4] = 7
+
+print(id(a))
+print(id(b))
+print(a) # Remember we did not explicitly make changes to a.
